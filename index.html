@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum Vitae de Melgarejo Vanesa Ytati - Estudiante de Técnico Preceptor en Posadas, Misiones">
+    <meta name="keywords" content="CV, Currículum, Preceptor, Educación, Posadas, Misiones">
+    <meta name="author" content="Melgarejo Vanesa Ytati">
+    <title>CV - Melgarejo Vanesa Ytati | Técnico Preceptor</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== VARIABLES CSS ===== */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --bg-white: #ffffff;
+            --border-color: #e5e7eb;
+            --success-color: #10b981;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark Mode Variables */
+        .dark-mode {
+            --primary-color: #3b82f6;
+            --secondary-color: #60a5fa;
+            --accent-color: #2563eb;
+            --text-dark: #f9fafb;
+            --text-light: #d1d5db;
+            --bg-light: #111827;
+            --bg-white: #1f2937;
+            --border-color: #374151;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .theme-toggle {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            font-weight: 700;
+            color: white;
+            box-shadow: var(--shadow-xl);
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            animation: fadeInScale 0.8s ease;
+        }
+
+        @keyframes fadeInScale {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .profile-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .profile-name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            animation: slideInLeft 0.8s ease;
+        }
+
+        .profile-title {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            animation: slideInLeft 0.8s ease 0.2s both;
+        }
+
+        @keyframes slideInLeft {
+            0% { opacity: 0; transform: translateX(-30px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            animation: slideInLeft 0.8s ease 0.4s both;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-item i {
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* ===== ACTIONS BAR ===== */
+        .actions-bar {
+            background: var(--bg-white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--bg-light);
+            color: var(--text-dark);
+            border: 2px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+        }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .card-title i {
+            font-size: 1.3rem;
+        }
+
+        /* ===== SKILLS ===== */
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--bg-light);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            border-radius: 10px;
+            transition: width 1s ease;
+            position: relative;
+            animation: slideProgress 1.5s ease;
+        }
+
+        @keyframes slideProgress {
+            0% { width: 0; }
+        }
+
+        .skill-progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* ===== LANGUAGES ===== */
+        .languages-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .language-item:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .language-name {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .language-level {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* ===== MAIN COLUMN ===== */
+        .main-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        /* ===== ABOUT ===== */
+        .about-text {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        /* ===== EXPERIENCE ===== */
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .experience-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 3px solid var(--bg-white);
+            box-shadow: 0 0 0 3px var(--primary-color);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .experience-title {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .experience-date {
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .experience-company {
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .experience-description {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* ===== TAGS ===== */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            padding: 0.4rem 0.8rem;
+            background: var(--bg-light);
+            color: var(--primary-color);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .tag:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--bg-white);
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        .footer-text {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 968px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-name {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
+
+            .actions-bar {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .header-content {
+                padding: 0 1rem;
+            }
+
+            .profile-name {
+                font-size: 1.7rem;
+            }
+
+            .profile-title {
+                font-size: 1.1rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+
+            .experience-item {
+                padding-left: 1.5rem;
+            }
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .theme-toggle,
+            .actions-bar,
+            .footer {
+                display: none;
+            }
+
+            .header {
+                background: #2563eb !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .card {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #e5e7eb;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== LOADING ANIMATION ===== */
+        .fade-in {
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-top">
+                <div></div>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i> <span id="theme-text">Modo Oscuro</span>
+                </button>
+            </div>
+            
+            <div class="profile-section">
+                <div class="profile-image">
+                    MV
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Melgarejo Vanesa Ytati</h1>
+                    <p class="profile-title">Estudiante en Técnico de Preceptor</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:melgarejovanesa512@gmail.com">melgarejovanesa512@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>3764708697</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Posadas, Misiones</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- ACTIONS BAR -->
+        <div class="actions-bar">
+            <div>
+                <h3 style="margin: 0; color: var(--text-dark);"><i class="fas fa-file-alt"></i> Currículum Vitae</h3>
+            </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="window.print()">
+                    <i class="fas fa-download"></i> Descargar PDF
+                </button>
+                <a href="https://github.com/hcgalvantech" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> Ver GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <!-- HABILIDADES TÉCNICAS -->
+                <div class="card">
+                    <h2 class="card-title">
+                        <i class="fas fa-code"></i> Habilidades Técnicas
+                    </h2>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Java</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Django</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tags" style="margin-top: 1.5rem;">
+                        <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tag"><i class="fas fa-database"></i> MongoDB</span>
+                        <span class="tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+                    </div>
+                </div>
+
+                <!-- IDIOMAS -->
+                <div class="card">
+                    <h2 class="card-title">
+                        <i class="fas fa-language"></i> Idiomas
+                    </h2>
+                    <div class="languages-list">
+                        <div class="language-item">
+                            <span class="language-name">
+                                <i class="fas fa-circle" style="font-size: 0.5rem; color: var(--success-color);"></i>
+                                Español
+                            </span>
+                            <span class="language-level">Nativo</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">
+                                <i class="fas fa-circle" style="font-size: 0.5rem; color: var(--primary-color);"></i>
+                                Inglés
+                            </span>
+                            <span class="language-level">Básico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- METODOLOGÍAS -->
+                <div class="card">
+                    <h2 class="card-title">
+                        <i class="fas fa-chart-line"></i> Metodologías
+                    </h2>
+                    <div class="tags">
+                        <span class="tag"><i class="fas fa-sync"></i> Metodologías Ágiles</span>
+                        <span class="tag"><i class="fas fa-tasks"></i> Scrum</span>
+                        <span class="tag"><i class="fas fa-layer-group"></i> DevOps</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- MAIN COLUMN -->
+            <main class="main-column">
+                <!-- RESUMEN PROFESIONAL -->
+                <div class="card">
+                    <h2 class="card-title">
+                        <i class="fas fa-user"></i> Resumen Profesional
+                    </h2>
+                    <p class="about-text">
+                        Estudiante comprometida con formación en Técnico de Preceptor, con sólidas habilidades 
+                        de comunicación y capacidad para trabajar en equipo. Preparada para desenvolverme 
+                        eficientemente en ambientes de alta presión, demostrando proactividad y adaptabilidad. 
+                        Con conocimientos técnicos en desarrollo de software y gestión educativa, busco aplicar 
+                        mis competencias en entornos que promuevan el crecimiento profesional y el aprendizaje continuo.
+                    </p>
+                </div>
+
+                <!-- EXPERIENCIA LABORAL -->
+                <div class="card">
+                    <h2 class="card-title">
+                        <i class="fas fa-briefcase"></i> Experiencia Laboral
+                    </h2>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Preceptor</h3>
+                                <span class="experience-date">
+                                    <i class="fas fa-calendar-alt"></i> Presente
+                                </span>
+                            </div>
+                            <p class="experience-company">
+                                <i class="fas fa-building"></i> Escuela de Nivel Secundario BOP 8
+                            </p>
+                            <p class="experience-company" style="margin-top: -0.3rem;">
+                                <i class="fas fa-map-marker-alt"></i> Posadas, Argentina
+                            </p>
+                            <p class="experience-description">
+                                Desempeño de funciones administrativas y de gestión en el ámbito educativo, 
+                                incluyendo atención a estudiantes, gestión de documentación académica, 
+                                coordinación de actividades escolares y apoyo al equipo docente. 
+                                Manejo de situaciones de alta presión manteniendo la organización y eficiencia.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Gestión Educativa</span>
+                                <span class="tag">Atención al Estudiante</span>
+                                <span class="tag">Organización</span>
+                                <span class="tag">Trabajo en Equipo</span>
+                                <span class="tag">Comunicación</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORMACIÓN ACADÉMICA -->
+                <div class="card">
+                    <h2 class="card-title">
+                        <i class="fas fa-graduation-cap"></i> Formación Académica
+                    </h2>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Técnico de Preceptor</h3>
+                                <span class="experience-date">
+                                    <i class="fas fa-calendar-alt"></i> En Curso
+                                </span>
+                            </div>
+                            <p class="experience-company">
+                                <i class="fas fa-university"></i> Institución Educativa - Posadas, Misiones
+                            </p>
+                            <p class="experience-description">
+                                Formación integral en gestión administrativa escolar, normativas educativas, 
+                                atención y orientación estudiantil, manejo de sistemas de información educativa 
+                                y desarrollo de habilidades de comunicación efectiva en el ámbito educativo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTOS DESTACADOS -->
+                <div class="card">
+                    <h2 class="card-title">
+                        <i class="fas fa-laptop-code"></i> Conocimientos Técnicos Adicionales
+                    </h2>
+                    <div class="experience-description" style="margin-bottom: 1rem;">
+                        Además de mi formación como Técnico de Preceptor, poseo conocimientos en desarrollo 
+                        de software y tecnologías modernas que complementan mi perfil profesional:
+                    </div>
+                    <div class="tags">
+                        <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tag"><i class="fas fa-server"></i> Django</span>
+                        <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tag"><i class="fas fa-database"></i> MongoDB</span>
+                        <span class="tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+                    </div>
+                </div>
+
+                <!-- COMPETENCIAS PROFESIONALES -->
+                <div class="card">
+                    <h2 class="card-title">
+                        <i class="fas fa-star"></i> Competencias Profesionales
+                    </h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.3rem; color: var(--text-dark);">Trabajo en Equipo</h4>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Capacidad para colaborar efectivamente con colegas y estudiantes.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.3rem; color: var(--text-dark);">Comunicación</h4>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Habilidades sólidas de comunicación oral y escrita.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.3rem; color: var(--text-dark);">Alta Presión</h4>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Preparada para ambientes de alta presión y demanda.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.3rem; color: var(--text-dark);">Proactividad</h4>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Iniciativa y capacidad de anticipar necesidades.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.3rem; color: var(--text-dark);">Adaptabilidad</h4>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Flexibilidad para adaptarme a diferentes situaciones.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.3rem; color: var(--text-dark);">Organización</h4>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Excelentes habilidades de gestión y planificación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="mailto:melgarejovanesa512@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/hcgalvantech" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="tel:3764708697" class="social-link" title="Teléfono">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                &copy; 2025 Melgarejo Vanesa Ytati. Todos los derechos reservados.
+            </p>
+            <p class="footer-text" style="margin-top: 0.5rem; font-size: 0.85rem;">
+                Posadas, Misiones - Argentina
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Variables en memoria (sin localStorage)
+        let currentTheme = 'light';
+
+        // Toggle Dark/Light Mode
+        function toggleTheme() {
+            const body = document.body;
+            const themeText = document.getElementById('theme-text');
+            const themeIcon = document.querySelector('.theme-toggle i');
+            
+            if (currentTheme === 'light') {
+                body.classList.add('dark-mode');
+                themeText.textContent = 'Modo Claro';
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                currentTheme = 'dark';
+            } else {
+                body.classList.remove('dark-mode');
+                themeText.textContent = 'Modo Oscuro';
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                currentTheme = 'light';
+            }
+        }
+
+        // Animación de las barras de progreso al cargar
+        window.addEventListener('load', function() {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 100);
+            });
+        });
+
+        // Animación de aparición al hacer scroll
+        function revealOnScroll() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (cardTop < windowHeight - 100) {
+                    card.classList.add('fade-in');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // Smooth scroll para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efecto de escribir en el título (opcional)
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.textContent = '';
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Mensaje de bienvenida en consola
+        console.log('%c¡Hola! 👋', 'color: #2563eb; font-size: 20px; font-weight: bold;');
+        console.log('%cGracias por visitar mi CV', 'color: #6b7280; font-size: 14px;');
+        console.log('%cContacto: melgarejovanesa512@gmail.com', 'color: #3b82f6; font-size: 12px;');
+    </script>
+</body>
+</html>
